@@ -32,21 +32,19 @@ jobs:
         uses: liquibase/liquibase-github-action@v4
         with:
           # Operation to run
-          operation: update
+          operation: 'update'
           
           # Path to Change Log directory
-          classpath: # optional
+          #classpath: # optional
           
           # Name of Change Log File
-          changeLogFile: # optional
+          changeLogFile: ${{ secrets.CHANGELOGFILE }}
           
           # Database Username
-          username: 
+          username: ${{ secrets.USERNAME }}
           
           # Database Password
-          password: 
+          password: ${{ secrets.PASSWORD }}
           
           # Database URL
-          url: 
-          
-          
+          url: ${{ secrets.URL }}         

@@ -44,7 +44,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           
           # Database URL
-          url: ${{ env.URL }}
+          url: ${{ secrets.URL }}
           
           # Classpath
           classpath: ${{ secrets.CLASSPATH }}

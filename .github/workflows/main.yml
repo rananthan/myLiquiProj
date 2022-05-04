@@ -44,4 +44,10 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           
           # Database URL
-          url: ${{ secrets.URL }}         
+          url: ${{ secrets.URL }}
+          
+          # Classpath
+          classpath: ${{ secrets.CLASSPATH }}
+          
+          # Driver
+          driver: ${{ secrets.DRIVER }}

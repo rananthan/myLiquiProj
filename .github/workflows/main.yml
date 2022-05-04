@@ -32,22 +32,21 @@ jobs:
         uses: liquibase/liquibase-github-action@v4
         with:
           # Operation to run
-          operation: 
+          operation: update
+          
           # Path to Change Log directory
           classpath: # optional
+          
           # Name of Change Log File
           changeLogFile: # optional
+          
           # Database Username
           username: 
+          
           # Database Password
           password: 
+          
           # Database URL
           url: 
-          # Count for updateCount and rollbackCount
-          count: # optional
-          # Tag for tag, updateToTag, and rollback
-          tag: # optional
-          # Date for rollbackToDate
-          date: # optional
-          # Reference URL for diff
-          referenceUrl: # optional
+          
+          

@@ -33,10 +33,7 @@ jobs:
         with:
           # Operation to run
           operation: 'update'
-          
-          # Path to Change Log directory
-          #classpath: # optional
-          
+                    
           # Name of Change Log File
           changeLogFile: ${{ secrets.CHANGELOGFILE }}
           

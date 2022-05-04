@@ -31,6 +31,10 @@ jobs:
         # uses: liquibase/liquibase-github-action@b1f3609f387883bcf293343e1e7eed329c11a5c3
         uses: liquibase/liquibase-github-action@v4
         with:
+          
+          args:
+            --log-level DEBUG
+          
           # Operation to run
           operation: 'update'
                     
@@ -48,3 +52,10 @@ jobs:
           
           # Classpath
           classpath: 'mysql-connector-java-8.0.29.jar'
+          
+          #HubAPI Key
+          hubApiKey: ${{ secrets.HUBAPIKEY }}
+          
+          #Pro License Key
+          proLicenseKey: ${{ secrets.PROLICENSEKEY }}
+          

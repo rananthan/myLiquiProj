@@ -47,4 +47,4 @@ jobs:
           url: ${{ secrets.URL }}
           
           # Classpath
-          classpath: /workspace/:/workspace/mysql-connector-java-8.0.29.jar
+          classpath: /workspace/mysql-connector-java-8.0.29.jar

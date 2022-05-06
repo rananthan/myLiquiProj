@@ -36,7 +36,7 @@ jobs:
             --log-level DEBUG
           
           # Operation to run
-          operation: 'update'
+          operation: 'status'
                     
           # Name of Change Log File
           changeLogFile: ${{ secrets.CHANGELOGFILE }}

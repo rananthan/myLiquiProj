@@ -51,11 +51,4 @@ jobs:
           url: ${{ secrets.URL }}
           
           # Classpath
-          classpath: 'mysql-connector-java-8.0.29.jar'
-          
-          #HubAPI Key
-          hubApiKey: ${{ secrets.HUBAPIKEY }}
-          
-          #Pro License Key
-          proLicenseKey: ${{ secrets.PROLICENSEKEY }}
-          
+          classpath: '/github/workspace/mysql-connector-java-8.0.29.jar'        

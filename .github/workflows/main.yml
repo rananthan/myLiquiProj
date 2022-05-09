@@ -51,4 +51,4 @@ jobs:
           url: ${{ secrets.URL }}
           
           # Classpath
-          classpath: ${{ secrets.CLASSPATH }}
+          classpath: ${{ github.workspace }}

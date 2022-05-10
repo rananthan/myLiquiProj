@@ -29,14 +29,14 @@ jobs:
       - name: Liquibase Github Action
         # You may pin to the exact commit or the version.
         # uses: liquibase/liquibase-github-action@b1f3609f387883bcf293343e1e7eed329c11a5c3
-        uses: liquibase/liquibase-github-action@v4
+        uses: liquibase/liquibase-github-action@v5
         with:
           
           # Operation to run
           operation: 'status'
                     
           # Classpath
-          classpath: ${{ github.workspace }}
+          classpath: /
           
           # Name of Change Log File
           changeLogFile: ${{ secrets.CHANGELOGFILE }}

@@ -32,12 +32,12 @@ jobs:
         uses: liquibase/liquibase-github-action@v4
         with:
           
-          args:
-            --log-level DEBUG
-          
           # Operation to run
           operation: 'status'
                     
+          # Classpath
+          classpath: ${{ github.workspace }}
+          
           # Name of Change Log File
           changeLogFile: ${{ secrets.CHANGELOGFILE }}
           
@@ -49,6 +49,3 @@ jobs:
           
           # Database URL
           url: ${{ secrets.URL }}
-          
-          # Classpath
-          classpath: ${{ github.workspace }}

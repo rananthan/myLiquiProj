@@ -36,7 +36,7 @@ jobs:
           operation: 'status'
                     
           # Classpath
-          classpath: /
+          classpath: /:/mysql-connector-java-8.0.29.jar
           
           # Name of Change Log File
           changeLogFile: ${{ secrets.CHANGELOGFILE }}
